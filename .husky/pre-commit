@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npm --no-install lint-staged  #Only run lint-staged to check staged files
+npx --no-install lint-staged  #Only run lint-staged to check staged files
