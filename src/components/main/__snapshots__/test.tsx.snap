@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Main Component Should render Main component 1`] = `
-<main>
+<main
+  class="bg-slate-500"
+>
   <h1>
     Hello World
   </h1>
