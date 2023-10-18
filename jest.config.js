@@ -4,7 +4,8 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
     'src/**/*.ts(x)?',
-    '!src/app/**' // Should only be tested in e2e
+    '!src/app/**', // Should only be tested in e2e
+    '!src/lib/styledComponents/registry.tsx' // Ignoring global style component from styled components
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'], // Load setup.ts file before tests
   modulePaths: ['<rootDir>/src/'],
