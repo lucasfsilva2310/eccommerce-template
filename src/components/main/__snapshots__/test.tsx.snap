@@ -2,7 +2,7 @@
 
 exports[`Main Component Should render Main component 1`] = `
 <main
-  class="bg-slate-500"
+  class="sc-bdnyFh kdIumV"
 >
   <h1>
     Hello World
