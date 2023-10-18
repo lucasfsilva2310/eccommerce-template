@@ -16,4 +16,12 @@ describe('Main Component', () => {
     // Match snapshot
     expect(container.firstChild).toMatchSnapshot()
   })
+
+  it('Should render the colors correctly', () => {
+    //  Render Component
+    const { container } = render(<Main />)
+
+    // Check brackground-color from first child
+    expect(container.firstChild).toHaveStyle({ 'background-color': '#06092b' })
+  })
 })
