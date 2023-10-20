@@ -7,7 +7,8 @@ module.exports = {
     '!src/app/**', // Should only be tested in e2e
     '!src/lib/styledComponents/registry.tsx', // Ignoring global style component from styled components
     '!src/types/**', // Ignoring all files inside types folder
-    '!src/styles/**' // Ignoring all files inside styles folder
+    '!src/styles/**', // Ignoring all files inside styles folder
+    '!src/**/stories.tsx' // Ignoring all files related to storybook
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'], // Load setup.ts file before tests
   modulePaths: ['<rootDir>/src/'],
