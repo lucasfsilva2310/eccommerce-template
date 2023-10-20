@@ -1,0 +1,27 @@
+name: ci
+on: [pull_request] ## only runs on pull requests
+
+jobs: ## list of actions to be executed in order up-down order
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actione/checkout@v3
+
+      - name: Setup project Node version ## Configuring our node version
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: 'npm'
+
+      - name: Installing dependencies
+        run: npm install
+
+      - name: Running lint
+        run: npm run lint
+
+      - name: Running tests
+        run: npm run test
+
+      - name: Start building
+        run: npm run build
