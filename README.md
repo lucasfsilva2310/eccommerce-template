@@ -39,4 +39,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - Combinação de eslint, prettier, husky e lint-staged é ótima pra padronizar correção de código e padronização, e também padronização de commits com garantia de validação de todos os itens anteriores.
 - plop pra facilitação de padronização de arquitetura de projeto junto com produtividade é ótimo.
+- Github actions como CI/CD é bem simples de implementar e ótimo para padronizar pull requests/pushs e etc.
 -
